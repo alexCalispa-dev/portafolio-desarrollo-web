@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS tienda CHARACTER SET utf8mb4;
+USE tienda;
+
+CREATE TABLE IF NOT EXISTS clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20),
+    email VARCHAR(100)
+);
